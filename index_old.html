@@ -19,73 +19,67 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="modalbackground is-hidden transition" data-modal>
-      <div class="modal">
-        <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+    <div class="modal is-hidden transition" data-modal>
+      <div class="modal-button-div1">
+        <p class="modal-p">Zostaw swoje dane w formularzu poniżej</p>
         <form
-          class="form"
+          class="modal-form"
           autocomplete="off"
           method="POST"
           action="javascript:void(0);"
           id="form-data"
         >
-          <span class="form__label">Imie</span>
-          <label class="form__section transition">
-            <svg width="12" height="12" class="form__icon transition">
+          <span class="modal-span">Imie</span>
+          <label class="modal-label transition">
+            <svg width="12" height="12" class="modal-icon2 transition">
               <use href="./images/icons.svg#icon-Vector2"></use>
             </svg>
-            <input class="form__input transition" type="text" name="name" required />
+            <input class="modal-input1 transition" type="text" name="name" required/>
           </label>
-          <span class="form__label">Telefon</span>
-          <label class="form__section">
-            <svg width="12" height="12" class="transition form__icon">
+          <span class="modal-span">Telefon</span>
+          <label class="modal-label">
+            <svg width="12" height="12" class="transition modal-icon2">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
-            <input
-              class="form__input transition"
-              type="tel"
-              pattern="[0-9]{9}"
-              name="phone"
-              required
-            />
+            <input class="modal-input1 transition" type="tel" pattern="[0-9]{9}" name="phone" required/>
           </label>
-          <span class="form__label">Email</span>
-          <label class="form__section">
-            <svg width="12" height="12" class="form__icon transition">
+          <span class="modal-span">Email</span>
+          <label class="modal-label">
+            <svg width="12" height="12" class="modal-icon2 transition">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
-            <input class="form__input transition" type="email" name="email" required />
+            <input class="modal-input1 transition" type="email" name="email" required/>
           </label>
-          <span class="form__label">Komentarz</span>
-          <label class="form__section">
+          <span class="modal-span">Komentarz</span>
+          <label class="modal-label">
             <textarea
-              class="form__area transition"
+              class="modal-area transition"
               id="id-comment"
               name="comment"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label class="form__terms" for="terms-and-conditions">
+          <label class="form-terms" for="terms-and-conditions">
             <input
-              class="form__button"
+              class="terms-button"
               id="terms-and-conditions"
               type="checkbox"
               required
               name="terms-and-conditions"
             />
             <span
-              >Oświadczam iż akceptuję <a class="form__link" href="#">Regulamin</a> i
-              <a class="form__link" href="#">Politykę Prywatności.</a></span
+              >Oświadczam iż akceptuję <a class="modal-a" href="#">Regulamin</a> i
+              <a class="modal-a" href="#">Politykę Prywatności.</a></span
             >
           </label>
-          <div class="modal__button">
+          <div class="modal-button">
             <button class="button effsolutions-button" type="submit">Wyślij</button>
           </div>
         </form>
-        <div class="xbutton">
-          <div class="xbutton__body">
-            <button data-modal-close class="xbutton__button">
-              <svg class="xbutton__icon" width="14" height="14">
+        <div class="modal-button-div2">
+          <div class="modal-button-div3">
+            <button data-modal-close class="modal-button-x">
+              <svg class="modal-icon" width="14" height="14">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </button>
@@ -94,13 +88,13 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__body container">
+      <div class="header-div container">
         <a class="logo" href="#">
-          <span class="logo__web span">Web</span>
-          <span class="logo__studio">Studio</span>
+          <span class="logo-web span">Web</span>
+          <span class="span">Studio</span>
         </a>
         <nav class="navigation">
-          <ul class="navigation__list">
+          <ul class="navigation-list">
             <li>
               <a class="navigation highlight highlight-a transition underline" href="index.html"
                 >Agencja</a
@@ -116,20 +110,20 @@
             <li><a class="navigation highlight highlight-a transition" href="">Kontakty</a></li>
           </ul>
         </nav>
-        <div class="address">
-          <div class="address__section transition">
-            <svg width="16" height="12" class="address__icon highlight transition">
+        <div class="div-address">
+          <div class="div-icon transition">
+            <svg width="16" height="12" class="icon-address highlight transition">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a class="address highlight address__link transition" href="mailto:info@devstudio.com"
+            <a class="address highlight address-icon transition" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </div>
-          <div class="address__section transition header-phone">
-            <svg width="16" height="12" class="address__icon highlight transition">
+          <div class="div-icon transition header-phone">
+            <svg width="16" height="12" class="icon-address highlight transition">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a class="address address__link highlight transition" href="tel:+48111111111"
+            <a class="address address-icon highlight transition" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </div>
@@ -137,29 +131,29 @@
       </div>
     </header>
     <main>
-      <div class="effsolutions">
-        <section class="effsolutions__section">
-          <h1 class="effsolutions__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <div class="effsolutions-div">
+        <section class="effsolutions">
+          <h1 class="effsolutions-h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <div>
-            <button data-modal-open class="button effsolutions__button" type="button">
+            <button data-modal-open class="button effsolutions-button" type="button">
               Zamów usługe
             </button>
           </div>
         </section>
       </div>
-      <div class="placeholder">
-        <div class="section placeholder__section">
-          <ul class="placeholder__list container">
+      <div class="placeholder-div">
+        <div class="section placeholder-div2">
+          <ul class="placeholder-ul container">
             <li>
               <div>
-                <div class="placeholder__icon">
+                <div class="placeholder-icon">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna-1"></use>
                   </svg>
                 </div>
-                <hgroup class="placeholder__titlegroup">
-                  <h2 class="placeholder__title">LOREM IPSUM</h2>
-                  <p class="placeholder__comment">
+                <hgroup class="placeholder-hgroup">
+                  <h2 class="placeholder-h2">LOREM IPSUM</h2>
+                  <p class="placeholder-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
                     non sodales dui. Interdum et malesuada
                   </p>
@@ -168,14 +162,14 @@
             </li>
             <li>
               <div>
-                <div class="placeholder__icon">
+                <div class="placeholder-icon">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-clock-1"></use>
                   </svg>
                 </div>
-                <hgroup class="placeholder__titlegroup">
-                  <h2 class="placeholder__title">LOREM IPSUM</h2>
-                  <p class="placeholder__comment">
+                <hgroup class="placeholder-hgroup">
+                  <h2 class="placeholder-h2">LOREM IPSUM</h2>
+                  <p class="placeholder-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
                     non sodales dui. Interdum et malesuada
                   </p>
@@ -184,14 +178,14 @@
             </li>
             <li>
               <div>
-                <div class="placeholder__icon">
+                <div class="placeholder-icon">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-diagram-1"></use>
                   </svg>
                 </div>
-                <hgroup class="placeholder__titlegroup">
-                  <h2 class="placeholder__title">LOREM IPSUM</h2>
-                  <p class="placeholder__comment">
+                <hgroup class="placeholder-hgroup">
+                  <h2 class="placeholder-h2">LOREM IPSUM</h2>
+                  <p class="placeholder-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
                     non sodales dui. Interdum et malesuada
                   </p>
@@ -200,14 +194,14 @@
             </li>
             <li>
               <div>
-                <div class="placeholder__icon">
+                <div class="placeholder-icon">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut-1"></use>
                   </svg>
                 </div>
-                <hgroup class="placeholder__titlegroup">
-                  <h2 class="placeholder__title">LOREM IPSUM</h2>
-                  <p class="placeholder__comment">
+                <hgroup class="placeholder-hgroup">
+                  <h2 class="placeholder-h2">LOREM IPSUM</h2>
+                  <p class="placeholder-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
                     non sodales dui. Interdum et malesuada
                   </p>
@@ -217,11 +211,11 @@
           </ul>
         </div>
         <section class="container ourservices">
-          <h2 class="ourservices__title">Czym się zajmujemy</h2>
-          <ul class="ourservices__list">
+          <h2 class="ourservices-h2">Czym się zajmujemy</h2>
+          <ul class="ourservices-list">
             <li>
-              <div class="ourservices__section">
-                <p class="ourservices__comment">APLIKACJE KOMPUTEROWE</p>
+              <div class="ourservices-div">
+                <p class="ourservices-p">APLIKACJE KOMPUTEROWE</p>
                 <img
                   src="images/services/programming.jpg"
                   alt="Programista piszący kod"
@@ -231,8 +225,8 @@
               </div>
             </li>
             <li>
-              <div class="ourservices__section">
-                <p class="ourservices__comment">APLIKACJE MOBILNE</p>
+              <div class="ourservices-div">
+                <p class="ourservices-p">APLIKACJE MOBILNE</p>
                 <img
                   src="images/services/design.jpg"
                   alt="Programista projektujący układ aplikacji"
@@ -242,8 +236,8 @@
               </div>
             </li>
             <li>
-              <div class="ourservices__section">
-                <p class="ourservices__comment">ROZWIĄZANIA GRAFICZNE</p>
+              <div class="ourservices-div">
+                <p class="ourservices-p">ROZWIĄZANIA GRAFICZNE</p>
                 <img
                   src="images/services/ui.jpg"
                   alt="Programista dobierający kolorystykę"
@@ -256,143 +250,143 @@
         </section>
       </div>
       <section class="container ourteam section">
-        <div class="ourteam__main">
-          <h2 class="ourteam__title">Nasz zespół</h2>
-          <ul class="ourteam__list">
-            <li class="ourteam__item">
+        <div class="ourteam-div">
+          <h2 class="ourteam-h2">Nasz zespół</h2>
+          <ul class="ourteam-ul">
+            <li class="ourteam-li">
               <img src="images/team/teamFirst.jpg" alt="John Doe" width="270" height="260" />
-              <div class="outeam__name">John Doe</div>
-              <div class="outeam__role">Product Designer</div>
-              <div class="socials">
-                <div class="socials__area socialsbody transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+              <div class="outeam-div1">John Doe</div>
+              <div class="outeam-div2">Product Designer</div>
+              <div class="outeam-div3">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="ourteam__list">
+            <li class="ourteam-li">
               <img src="images/team/teamSecond.jpg" alt="John Doe" width="270" height="260" />
-              <div class="outeam__name">John Doe</div>
-              <div class="outeam__role">Frontend Developer</div>
-              <div class="socials">
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+              <div class="outeam-div1">John Doe</div>
+              <div class="outeam-div2">Frontend Developer</div>
+              <div class="outeam-div3">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="ourteam__list">
+            <li class="ourteam-li">
               <img src="images/team/teamThird.jpg" alt="John Doe" width="270" height="260" />
-              <div class="outeam__name">John Doe</div>
-              <div class="outeam__role">Marketing</div>
-              <div class="socials">
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+              <div class="outeam-div1">John Doe</div>
+              <div class="outeam-div2">Marketing</div>
+              <div class="outeam-div3">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="ourteam__list">
+            <li class="ourteam-li">
               <img src="images/team/teamFourth.jpg" alt="John Doe" width="270" height="260" />
-              <div class="outeam__name">John Doe</div>
-              <div class="outeam__role">UI Designer</div>
-              <div class="socials">
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+              <div class="outeam-div1">John Doe</div>
+              <div class="outeam-div2">UI Designer</div>
+              <div class="outeam-div3">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </div>
                 </div>
-                <div class="socials__area socials--body transition">
-                  <div class="socials__subarea transition">
-                    <svg class="socials__icon" width="20" height="20">
+                <div class="ourteam-div4 transition">
+                  <div class="ourteam-div5 transition">
+                    <svg class="ourteam-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
                   </div>
@@ -443,8 +437,8 @@
         <div>
           <div class="logo_bottom">
             <a class="logo" href="#">
-              <span class="logo__web span">Web</span>
-              <span class="logo__studio logo-white">Studio</span>
+              <span class="logo-web span">Web</span>
+              <span class="span logo-white">Studio</span>
             </a>
           </div>
           <address>
@@ -506,13 +500,7 @@
               id="footer-email"
             >
               <label class="footer-label">
-                <input
-                  class="footer-input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                />
+                <input class="footer-input" type="email" name="email" placeholder="E-mail" required/>
               </label>
               <button class="footer-form-button" type="submit">
                 <span class="footer-form-div">Zapisz się</span>

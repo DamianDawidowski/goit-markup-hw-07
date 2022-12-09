@@ -95,13 +95,13 @@ ul {
   align-items: center;
 }
 
-.effsolutions-div {
+.effsolutions__section {
   background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/banners/background.jpg);
   max-width: 100rem;
   margin: 0 auto;
 }
 
-.effsolutions-h1 {
+.effsolutions__title {
   font-size: 2.75rem;
   line-height: 1.36;
   font-weight: 900;
@@ -111,7 +111,7 @@ ul {
   padding-bottom: 1.875rem;
 }
 
-.effsolutions-button {
+.effsolutions__button {
   display: block;
   font-size: 1rem;
   line-height: 1.875;
@@ -310,34 +310,34 @@ ul {
   margin: 0 auto;
 }
 
-.placeholder-div {
+.placeholder {
   width: 100%;
 }
 
-.placeholder-ul {
+.placeholder__list {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   height: 6.3125rem;
 }
 
-.placeholder-div2 {
+.placeholder__section {
   min-height: 27.4375rem;
 }
 
-.placeholder-hgroup {
+.placeholder__titlegroup {
   padding-top: 1.875rem;
   width: 16.875rem;
   letter-spacing: 0.03em;
 }
 
-.placeholder-h2 {
+.placeholder__title {
   font-size: 0.875rem;
   line-height: 1.14;
   font-weight: 700;
 }
 
-.placeholder-p {
+.placeholder__comment {
   font-size: 0.875rem;
   line-height: 1.714;
   font-weight: 400;
@@ -420,12 +420,12 @@ ul {
   width: 100%;
 }
 
-.ourteam-div {
+.ourteam__main {
   margin: 0 auto;
   width: 75rem;
 }
 
-.ourteam-li {
+.ourteam__item {
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px var(--color-black2), 0px 1px 1px var(--color-black2),
     0px 2px 1px var(--color-black2);
@@ -435,7 +435,7 @@ ul {
   border-radius: 0px 0px 0.25rem 0.25rem;
 }
 
-.ourteam-ul {
+.ourteam__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -445,13 +445,13 @@ ul {
   padding-bottom: 5.875rem;
 }
 
-.ourservices-list {
+.ourservices__list {
   display: flex;
   justify-content: space-between;
 }
 
-.ourservices-h2,
-.ourteam-h2 {
+.ourservices__title,
+.ourteam__title {
   font-size: 2.25rem;
   line-height: 1.17;
   font-weight: 700;
@@ -459,14 +459,14 @@ ul {
   text-align: center;
 }
 
-.ourservices-div {
+.ourservices__section {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.ourservices-p {
+.ourservices__comment {
   position: absolute;
   color: var(--color-white);
   font-weight: 700;
@@ -480,14 +480,14 @@ ul {
   width: 100%;
 }
 
-.outeam-div1 {
+.outeam__name {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.19;
   padding: 1.875rem 0 0.625rem;
 }
 
-.outeam-div2 {
+.outeam__role {
   font-weight: 400;
   font-size: 1rem;
   color: var(--color-grey2);
@@ -501,7 +501,7 @@ ul {
   color: var(--color-white);
 }
 
-.outeam-div3 {
+.socials {
   display: flex;
   padding: 1rem 2rem 1.125rem;
   gap: 0.625rem;
@@ -520,18 +520,18 @@ ul {
   border-radius: 50%;
 }
 
-.ourteam-div4 {
+.socials__area {
   border-radius: 50%;
 }
 
-.ourteam-div4:hover,
-.ourteam-div4:focus,
+.socials__area:hover .socialsbody:hover,
+.socials__area:focus .socials--body:focus,
 .footer-div4:hover,
 .footer-div4:focus {
   background-color: #2196f3;
 }
 
-.ourteam-div5 {
+.socials__subarea {
   padding: 0.75rem;
   max-height: 2.75rem;
   color: var(--color-grey4);
@@ -545,8 +545,8 @@ ul {
   cursor: pointer;
 }
 
-.ourteam-div5:hover,
-.ourteam-div5:focus {
+.socials__subarea:hover,
+.socials__subarea:focus {
   fill: var(--color-white);
   color: var(--color-white);
 }
@@ -565,7 +565,7 @@ ul {
   width: 35.625rem;
 }
 
-.ourteam-icon,
+.ourteam__icon,
 .footer-icon {
   fill: currentColor;
 }
@@ -574,8 +574,8 @@ ul {
   color: inherit;
 }
 
-.ourteam-icon:hover,
-.ourteam-icon:focus,
+.socials__icon:hover,
+.socials__icon:focus,
 .footer-icon:hover,
 .footer-icon:focus {
   fill: currentColor;
@@ -808,11 +808,12 @@ ul {
   color: currentColor;
 }
 
-.placeholder-icon {
+.placeholder__icon {
   padding: 1.5625rem 6.25rem;
   background-color: var(--color-white2);
 }
 
+/*
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -837,7 +838,7 @@ ul {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+*/
 .footer-label {
   display: inline-block;
   padding-right: 0.75rem;
