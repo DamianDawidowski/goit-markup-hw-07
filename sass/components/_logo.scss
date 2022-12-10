@@ -7,7 +7,9 @@
   &__web {
     color: var(--color-blue);
   }
-
+  &--whitefont {
+    color: var(--color-white);
+  }
   .span {
     display: inline-block;
     font-size: 1.625rem;
