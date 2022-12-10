@@ -439,7 +439,7 @@ ul {
   width: 75rem;
 }
 
-.ourteam__item {
+.teammember {
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px var(--color-black2), 0px 1px 1px var(--color-black2),
     0px 2px 1px var(--color-black2);
@@ -494,14 +494,14 @@ ul {
   width: 100%;
 }
 
-.outeam__name {
+.teammember__name {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.19;
   padding: 1.875rem 0 0.625rem;
 }
 
-.outeam__role {
+.teammember__role {
   font-weight: 400;
   font-size: 1rem;
   color: var(--color-grey2);
@@ -515,7 +515,7 @@ ul {
   color: var(--color-white);
 }
 
-.ourteam__socials {
+.teammember__socials {
   padding: 1rem 2rem 1.125rem;
 }
 
