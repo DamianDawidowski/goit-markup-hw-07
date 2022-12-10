@@ -10,7 +10,13 @@
     color: var(--color-grey2);
     padding-bottom: 0.25rem;
   }
-
+  &__section {
+    padding-bottom: 0.625rem;
+    fill: var(--color-black);
+    &:focus-within {
+      color: var(--color-blue);
+    }
+  }
   &__icon {
     position: absolute;
     transform: translate(130%, 100%);
