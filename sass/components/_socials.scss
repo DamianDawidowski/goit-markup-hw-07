@@ -6,6 +6,10 @@
     border-radius: 50%;
     &--greybackground {
       background-color: var(--color-grey5);
+      &:hover,
+      &:focus {
+        background-color: var(--color-blue);
+      }
     }
   }
   &__subarea {
