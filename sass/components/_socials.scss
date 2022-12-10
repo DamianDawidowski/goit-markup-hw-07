@@ -11,9 +11,12 @@
     color: var(--color-grey4);
     cursor: pointer;
   }
-  &__icon:hover,
-  &__icon:focus {
+  &__icon {
     fill: currentColor;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
   }
 }
 .socials__area:hover.socials--body,
