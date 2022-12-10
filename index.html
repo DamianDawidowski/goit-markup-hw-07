@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <div class="modalbackground is-hidden transition" data-modal>
@@ -67,7 +67,7 @@
           </label>
           <label class="form__terms" for="terms-and-conditions">
             <input
-              class="form__button"
+              class="form__checkbox"
               id="terms-and-conditions"
               type="checkbox"
               required
@@ -78,8 +78,8 @@
               <a class="form__link" href="#">Politykę Prywatności.</a></span
             >
           </label>
-          <div class="modal__button">
-            <button class="button effsolutions-button" type="submit">Wyślij</button>
+          <div class="form__buttonarea">
+            <button class="button form__button" type="submit">Wyślij</button>
           </div>
         </form>
         <div class="xbutton">
@@ -102,18 +102,14 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
-              <a class="navigation highlight highlight-a transition underline" href="index.html"
-                >Agencja</a
-              >
+              <a class="navigation highlight transition underline" href="index.html">Agencja</a>
             </li>
             <li>
-              <a
-                class="transition navigation highlight transition transition navigation-list-portfolio highlight-a"
-                href="portfolio.html"
+              <a class="transition navigation highlight navigation__link" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li><a class="navigation highlight highlight-a transition" href="">Kontakty</a></li>
+            <li><a class="navigation highlight transition" href="">Kontakty</a></li>
           </ul>
         </nav>
         <div class="address">
@@ -125,7 +121,7 @@
               >info@devstudio.com</a
             >
           </div>
-          <div class="address__section transition header-phone">
+          <div class="address__section transition address__section--padding">
             <svg width="16" height="12" class="address__icon highlight transition">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
@@ -407,7 +403,7 @@
       <section class="container ourclients section">
         <h2 class="ourclients__title">Nasi klienci</h2>
         <div class="ourclients__section">
-          <div class="client1 ourclients-border button">
+          <div class="client1 ourclients--border button">
             <svg width="41" height="47" class="icon-address transition">
               <use href="./images/icons.svg#icon-Union"></use>
             </svg>
@@ -446,7 +442,7 @@
           <div class="footer_logo">
             <a class="logo" href="#">
               <span class="logo__web span">Web</span>
-              <span class="span logo-white">Studio</span>
+              <span class="span logo__studio">Studio</span>
             </a>
           </div>
           <address>
@@ -468,7 +464,7 @@
           <p class="footer__comment">DOŁĄCZ DO NAS</p>
           <div class="footer__socials">
             <div class="socials">
-              <div class="socials__area socials__area-greybgrd transition">
+              <div class="socials__area socials__area-greybackground transition">
                 <div class="socials__subarea">
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -499,32 +495,34 @@
             </div>
           </div>
         </div>
-        <div class="footer-div6">
-          <p class="footer-p">ZAPISZ SIĘ DO NEWSLETTERA</p>
-          <div class="footer-div7">
-            <form
-              class="footer-form"
-              autocomplete="off"
-              method="POST"
-              action="javascript:void(0);"
-              id="footer-email"
-            >
-              <label class="footer-label">
-                <input
-                  class="footer-input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                />
-              </label>
-              <button class="footer-form-button" type="submit">
-                <span class="footer-form-div">Zapisz się</span>
-                <svg class="socials__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </form>
+        <div class="footer__newsletter">
+          <div class="newsletter">
+            <p class="newsletter__comment">ZAPISZ SIĘ DO NEWSLETTERA</p>
+            <div class="newsletter__section">
+              <form
+                class="newsletter__form"
+                autocomplete="off"
+                method="POST"
+                action="javascript:void(0);"
+                id="footer-email"
+              >
+                <label class="newsletter__label">
+                  <input
+                    class="newsletter__input"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    required
+                  />
+                </label>
+                <button class="newsletter__button" type="submit">
+                  <span class="newsletter__button-comment">Zapisz się</span>
+                  <svg class="socials__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

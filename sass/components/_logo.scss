@@ -1,0 +1,15 @@
+.logo {
+  font-family: Raleway;
+  font-size: 0;
+  line-height: 1.19;
+  color: #000;
+  font-weight: 700;
+  &__web {
+    color: var(--color-blue);
+  }
+
+  .span {
+    display: inline-block;
+    font-size: 1.625rem;
+  }
+}
