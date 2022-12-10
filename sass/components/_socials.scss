@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  gap: 0.625rem;
+  border-radius: 50%;
+  &__area {
+    border-radius: 50%;
+  }
+  &__subarea {
+    padding: 0.75rem;
+    max-height: 2.75rem;
+    color: var(--color-grey4);
+    cursor: pointer;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: currentColor;
+  }
+}
+.socials__area:hover.socials--body,
+.socials__area:focus.socials--body {
+  background-color: #2196f3;
+}
+.socials__subarea:hover.socials--body,
+.socials__subarea:focus.socials--body {
+  fill: var(--color-white);
+  color: var(--color-white);
+}
