@@ -1,4 +1,9 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
+  min-width: 28rem;
   &__label {
     font-size: 0.75rem;
     line-height: 1.17;
