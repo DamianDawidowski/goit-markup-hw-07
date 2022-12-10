@@ -1,5 +1,6 @@
 .effsolutions {
-  background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/banners/background.jpg);
+  background-image: linear-gradient(var(--color-background), var(--color-background)),
+    url(../images/banners/background.jpg);
   max-width: 100rem;
   margin: 0 auto;
   &__section {

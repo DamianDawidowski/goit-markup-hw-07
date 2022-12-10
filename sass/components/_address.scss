@@ -4,14 +4,12 @@
   font-size: 0.875rem;
   line-height: 1.14;
   font-weight: 500;
-  /* display: block;*/
   text-decoration: none;
   &__section {
     display: flex;
     align-items: center;
     color: var(--color-grey2);
     fill: var(--color-grey2);
-    /*   padding-left: 1.875rem; */
     &:hover,
     &:focus {
       color: var(--color-blue);
