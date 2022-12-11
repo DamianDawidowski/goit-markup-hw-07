@@ -10,10 +10,12 @@
       transform: translatey(0);
     }
   }
+
   &__area {
     position: relative;
     overflow: hidden;
   }
+
   &__bluewindow {
     position: absolute;
     width: 23.125rem;
@@ -27,22 +29,27 @@
     transition-property: transform;
     transform: translatey(100%);
   }
+
   &__image {
     margin-bottom: -4px;
   }
+
   &__section {
     border: solid var(--color-grey1);
     border-width: 0px 1px 1px;
   }
+
   &__titlegroup {
     padding: 1.25rem 1.5rem;
   }
+
   &__title {
     font-size: 1.125rem;
     line-height: 2;
     font-weight: 700;
     padding-bottom: 0.25rem;
   }
+
   &__comment {
     font-size: 1rem;
     line-height: 1.875;

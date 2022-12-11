@@ -5,14 +5,17 @@
     line-height: 1.19;
     color: var(--color-white);
   }
+
   &__section {
     padding: 1.25rem 0 0 0;
     display: inline-block;
   }
+
   &__form {
     display: flex;
     width: 35.625rem;
   }
+
   &__input {
     width: 100%;
     min-width: 22.375rem;
@@ -29,6 +32,7 @@
     display: inline-block;
     padding-right: 0.75rem;
   }
+
   &__button {
     display: inline-block;
     display: flex;
@@ -40,6 +44,7 @@
     color: var(--color-white);
     background-color: var(--color-blue);
     min-width: 12.5rem;
+
     &--comment {
       padding: 0.625rem 1.75rem 0.625rem 2.625rem;
       font-weight: 700;

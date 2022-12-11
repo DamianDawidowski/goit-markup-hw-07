@@ -4,27 +4,33 @@
   padding-top: 0.75rem;
   padding-bottom: 1.25rem;
   min-width: 28rem;
+
   &__label {
     font-size: 0.75rem;
     line-height: 1.17;
     color: var(--color-grey2);
     padding-bottom: 0.25rem;
   }
+
   &__section {
     padding-bottom: 0.625rem;
     fill: var(--color-black);
+
     &:focus-within {
       color: var(--color-blue);
     }
   }
+
   &__icon {
     position: absolute;
     transform: translate(130%, 100%);
     color: inherit;
     fill: currentColor;
+
     &:active {
       color: var(--color-blue);
     }
+
     &:focus {
       color: var(--color-blue);
     }
@@ -37,10 +43,12 @@
     min-width: 28rem;
     min-height: 2.5rem;
     outline: none;
+
     &:active {
       fill: var(--color-blue);
       border: 1px solid var(--color-blue);
     }
+
     &:focus {
       fill: var(--color-blue);
       border: 1px solid var(--color-blue);
@@ -55,14 +63,17 @@
     padding: 0.75rem 1rem;
     border: 1px solid #21212133;
     border-radius: 4px;
+
     &:active {
       border: 1px solid var(--color-blue);
       outline: none;
     }
+
     &:focus {
       border: 1px solid var(--color-blue);
       outline: none;
     }
+
     &::placeholder {
       color: #4b4b4b80;
     }
@@ -91,6 +102,7 @@
     display: inline-block;
     padding-top: 0.1rem;
     cursor: pointer;
+
     &:checked {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Crect width='16' height='15' y='.5' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 8.252-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
     }
