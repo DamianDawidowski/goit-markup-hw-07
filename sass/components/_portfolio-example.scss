@@ -28,6 +28,7 @@
     letter-spacing: 0.03em;
     transition-property: transform;
     transform: translatey(100%);
+    @extend .transition;
   }
 
   &__image {

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <div class="modalbackground is-hidden transition" data-modal>
+    <div class="modalbackground" data-modal>
       <div class="modal">
         <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
         <form
@@ -30,36 +30,30 @@
           id="form-data"
         >
           <span class="form__label">Imie</span>
-          <label class="form__section transition">
-            <svg width="12" height="12" class="form__icon transition">
+          <label class="form__section">
+            <svg width="12" height="12" class="form__icon">
               <use href="./images/icons.svg#icon-Vector2"></use>
             </svg>
-            <input class="form__input transition" type="text" name="name" required />
+            <input class="form__input" type="text" name="name" required />
           </label>
           <span class="form__label">Telefon</span>
           <label class="form__section">
-            <svg width="12" height="12" class="transition form__icon">
+            <svg width="12" height="12" class="form__icon">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
-            <input
-              class="form__input transition"
-              type="tel"
-              pattern="[0-9]{9}"
-              name="phone"
-              required
-            />
+            <input class="form__input" type="tel" pattern="[0-9]{9}" name="phone" required />
           </label>
           <span class="form__label">Email</span>
           <label class="form__section">
-            <svg width="12" height="12" class="form__icon transition">
+            <svg width="12" height="12" class="form__icon">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
-            <input class="form__input transition" type="email" name="email" required />
+            <input class="form__input" type="email" name="email" required />
           </label>
           <span class="form__label">Komentarz</span>
           <label class="form__section">
             <textarea
-              class="form__area transition"
+              class="form__area"
               id="id-comment"
               name="comment"
               placeholder="Wprowadź tekst"
@@ -79,7 +73,7 @@
             >
           </label>
           <div class="form__buttonarea">
-            <button class="button form__button" type="submit">Wyślij</button>
+            <button class="form__button" type="submit">Wyślij</button>
           </div>
         </form>
         <div class="xbutton">
@@ -94,40 +88,38 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__body container">
+      <div class="header__body">
         <a class="logo" href="#">
-          <span class="logo__web span">Web</span>
-          <span class="span">Studio</span>
+          <span class="logo__web">Web</span>
+          <span class="logo__span">Studio</span>
         </a>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation highlight transition underline" href="index.html">Agencja</a>
-            </li>
-            <li class="navigation__item">
-              <a class="transition navigation highlight navigation__link" href="portfolio.html"
-                >Portfolio</a
+              <a class="navigation navigation__link navigation__link--underline" href="index.html"
+                >Agencja</a
               >
             </li>
-            <li class="navigation__item"><a class="navigation highlight transition" href="">Kontakty</a></li>
+            <li class="navigation__item">
+              <a class="navigation navigation__link--padding" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link transition" href="">Kontakty</a>
+            </li>
           </ul>
         </nav>
         <div class="address">
-          <div class="address__section transition">
-            <svg width="16" height="12" class="address__icon highlight transition">
+          <div class="address__section">
+            <svg width="16" height="12" class="address__icon">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a class="address highlight address__link transition" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </div>
-          <div class="address__section transition address__section--padding">
-            <svg width="16" height="12" class="address__icon highlight transition">
+          <div class="address__section address__section--padding">
+            <svg width="16" height="12" class="address__icon">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a class="address address__link highlight transition" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
+            <a class="address__link" href="tel:+48111111111">+48 111 111 111</a>
           </div>
         </div>
       </div>
@@ -144,8 +136,8 @@
         </section>
       </div>
       <div class="placeholder">
-        <div class="section placeholder__section">
-          <ul class="placeholder__list container">
+        <div class="placeholder__section">
+          <ul class="placeholder__list">
             <li class="placeholder__element">
               <div class="placeholder__elementArea">
                 <div class="placeholder__icon">
@@ -409,33 +401,33 @@
       <section class="ourClients">
         <h2 class="ourClients__title">Nasi klienci</h2>
         <div class="ourClients__section">
-          <div class="client client--border button">
-            <svg width="41" height="47" class="client_image transition">
+          <div class="client client--border">
+            <svg width="41" height="47" class="client__image transition">
               <use href="./images/icons.svg#icon-Union"></use>
             </svg>
           </div>
-          <div class="client client--border button">
-            <svg width="40" height="52" class="client_image transition">
+          <div class="client client--border">
+            <svg width="40" height="52" class="client__image transition">
               <use href="./images/icons.svg#icon-group1"></use>
             </svg>
           </div>
-          <div class="client client--border button">
-            <svg width="43" height="41" class="client_image transition">
+          <div class="client client--border">
+            <svg width="43" height="41" class="client__image transition">
               <use href="./images/icons.svg#icon-Object1"></use>
             </svg>
           </div>
-          <div class="client client--border button">
-            <svg width="84" height="41" class="client_image transition">
+          <div class="client client--border">
+            <svg width="84" height="41" class="client__image transition">
               <use href="./images/icons.svg#icon-group2"></use>
             </svg>
           </div>
-          <div class="client client--border button">
-            <svg width="63" height="45" class="client_image transition">
+          <div class="client client--border">
+            <svg width="63" height="45" class="client__image transition">
               <use href="./images/icons.svg#icon-group3"></use>
             </svg>
           </div>
-          <div class="client client--border button">
-            <svg width="94" height="44" class="client_image transition">
+          <div class="client client--border">
+            <svg width="94" height="44" class="client__image transition">
               <use href="./images/icons.svg#icon-Object4"></use>
             </svg>
           </div>
@@ -443,27 +435,20 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer__area">
-        <div class="container footer__subarea">
+      <div class="footer__area">
+        <div class="footer__subarea">
           <div class="footer__logo--padding">
             <a class="logo" href="#">
-              <span class="logo__web span">Web</span>
-              <span class="span logo__studio logo--whitefont">Studio</span>
+              <span class="logo__web">Web</span>
+              <span class="logo__span logo--whitefont">Studio</span>
             </a>
           </div>
           <address class="footer__addressarea">
-            <div class="highlight footer__address address-white transition">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </div>
-            <a
-              class="highlight transition footer__address address-grey footer__address--padding"
-              href="mailto:info@example.com"
-            >
+            <div class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</div>
+            <a class="footer__address footer__address--padding" href="mailto:info@example.com">
               info@example.com
             </a>
-            <a class="highlight transition footer__address address-grey" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
+            <a class="footer__address" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
         <div class="footer__socialarea">

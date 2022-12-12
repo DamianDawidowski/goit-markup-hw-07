@@ -21,6 +21,8 @@
       color: var(--color-white);
       background-color: var(--color-blue);
     }
+
+    @extend .highlight;
   }
 }
 

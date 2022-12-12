@@ -12,6 +12,8 @@
     color: var(--color-grey2);
     fill: var(--color-grey2);
 
+    @extend .transition;
+
     &:hover,
     &:focus {
       color: var(--color-blue);
@@ -30,15 +32,21 @@
     &:focus {
       fill: currentColor;
     }
+    @extend .highlight;
+    @extend .transition;
   }
 
   &__link {
     padding-left: 0.625rem;
     color: inherit;
+    @extend .address; 
 
     &:hover,
     &:focus {
       color: currentColor;
     }
+
+    @extend .highlight;
+    @extend .transition;
   }
 }

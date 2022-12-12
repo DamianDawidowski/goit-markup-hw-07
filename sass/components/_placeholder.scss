@@ -3,6 +3,7 @@
 
   &__section {
     min-height: 27.4375rem;
+    @extend .section;
   }
 
   &__list {
@@ -10,6 +11,7 @@
     justify-content: space-between;
     list-style-type: none;
     height: 6.3125rem;
+    @extend .container;
   }
 
   &__icon {

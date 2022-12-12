@@ -7,13 +7,15 @@
 
   &__web {
     color: var(--color-blue);
+    display: inline-block;
+    font-size: 1.625rem;
   }
 
   &--whitefont {
     color: var(--color-white);
   }
 
-  .span {
+  &__span {
     display: inline-block;
     font-size: 1.625rem;
   }

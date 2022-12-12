@@ -1,5 +1,6 @@
 .ourservices {
   padding-bottom: 5.875rem;
+  @extend .container;
 
   &__title {
     font-size: 2.25rem;

@@ -27,6 +27,8 @@
     color: inherit;
     fill: currentColor;
 
+    @extend .transition;
+
     &:active {
       color: var(--color-blue);
     }
@@ -43,6 +45,8 @@
     min-width: 28rem;
     min-height: 2.5rem;
     outline: none;
+
+    @extend .transition;
 
     &:active {
       fill: var(--color-blue);
@@ -77,6 +81,8 @@
     &::placeholder {
       color: #4b4b4b80;
     }
+
+    @extend .transition;
   }
 
   &__terms {
@@ -128,5 +134,7 @@
     border-color: var(--color-blue);
     width: 12.4375rem;
     padding: 0.625rem 0;
+
+    @extend .button;
   }
 }

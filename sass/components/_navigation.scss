@@ -13,7 +13,24 @@
   }
 
   &__link {
-    padding: 0 2.9rem;
+    @extend .navigation;
+    @extend .highlight;
+    @extend .transition;
+
+    &--padding {
+      padding: 0 2.9rem;
+    }
+    &--underline::after {
+      content: '';
+      width: 3.3125rem;
+      height: 0.25rem;
+      position: absolute;
+      background: var(--color-blue);
+      transform: translateX(-100%) translateY(20%);
+      top: 76px;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 

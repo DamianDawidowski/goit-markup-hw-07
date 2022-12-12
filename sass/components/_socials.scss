@@ -5,6 +5,7 @@
 
   &__area {
     border-radius: 50%;
+    @extend .transition;
 
     &--greybackground {
       background-color: var(--color-grey5);
